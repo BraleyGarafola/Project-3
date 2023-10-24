@@ -61,5 +61,12 @@
     display: flex;
     width: 100%;
     align-items: left;
-  
   }
+
+  @media screen and (max-width: 600px) {
+  .BG-logo{
+    display: flex;
+    width: 50%;
+    align-items: left;
+  }
+}
