@@ -1,12 +1,15 @@
 /* Place CSS styles here */
 /* Add a black background color to the top navigation */
-.topnav {
+.BG-Body{
+  background-color: #FFF4F3;
+}
+.BG-Nav {
     background-color: #FFF4F3;
     overflow: hidden;
   }
   
   /* Style the links inside the navigation bar */
-  .topnav a {
+  .BG-Nav a {
     float: left;
     font-family: Verdana;
     display: block;
@@ -18,26 +21,26 @@
   }
   
   /* Change the color of links on hover */
-  .topnav a:hover {
+  .BG-Nav a:hover {
     background-color: #fcbebe;
     color: #7c3033;
   }
   
   /* Add an active class to highlight the current page */
-  .topnav a.active {
+  .BG-Nav a.active {
     background-color: #FFF4F3;
-    color: white;
+    color: rgb(141, 62, 62);
   }
   
   /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
+  .BG-Nav .icon {
     display: none;
   }
 
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
+    .BG-Nav a:not(:first-child) {display: none;}
+    .BG-Nav a.icon {
       float: right;
       margin-top: 25px;
       display: block;
@@ -46,13 +49,13 @@
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
+    .BG-Nav.responsive {position: relative;}
+    .BG-Nav.responsive a.icon {
       position: absolute;
       right: 0;
       top: 0;
     }
-    .topnav.responsive a {
+    .BG-Nav.responsive a {
       float: none;
       display: block;
       text-align: center;
@@ -65,4 +68,58 @@
     align-items: left;
   }
 
- 
+  .BG-title {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.55), 
+      rgba(0, 0, 0, 0.55)
+    ),
+    /* bottom, image */
+    url(../img/2552\ The\ Who.png);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+  
+@media (max-width: 480px) {
+  .BG-main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+  
+  h1 {
+    font-family: Verdana;
+    color: white;
+    font-size: 60px;
+    text-shadow: 1px 1px 2px #000;
+  }
+
+  .BG-default-wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h2{
+    font-family: Verdana;
+    font-size: 40px;
+    color: #BD5055;
+  }
+
+  p{
+    font-size: 20px;
+    font-family: Arial;
+  }
+  
