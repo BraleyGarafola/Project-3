@@ -103,6 +103,12 @@
     text-shadow: 1px 1px 2px #000;
   }
 
+  @media (max-width: 480) {
+    h1 {
+     font-size: 40px;
+      }
+    }
+  
   .BG-default-wrapper {
     max-width: 800px;
     margin-left: auto;
@@ -123,3 +129,8 @@
     font-family: Arial;
   }
   
+  .BG-featured-item-title{
+    display: flex;
+    justify-content: center;
+    color: #BD5055;
+  }
